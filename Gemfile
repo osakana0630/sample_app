@@ -38,5 +38,8 @@ group :production do
   gem 'pg', '1.1.4'
 end
 
+gem 'will_paginate',           '3.1.8'
+gem 'bootstrap-will_paginate', '1.0.0'
+
 # Windows ではタイムゾーン情報用の tzinfo-data gem を含める必要があります
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]

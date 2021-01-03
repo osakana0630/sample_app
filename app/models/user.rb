@@ -7,6 +7,8 @@ class User < ApplicationRecord
             uniqueness: true
   validates :password, presence: true, length: { minimum: 6 }
   has_secure_password
+  has_many :microposts, dependent: :destroy
+
 
   # 渡された文字列のハッシュ値を返す
   def User.digest(string)
